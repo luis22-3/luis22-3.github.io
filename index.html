@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguer's Junior</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/imagenpresentacion.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 0;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+        .menu-item {
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+        .menu-item img {
+            height: 250px;
+            object-fit: cover;
+        }
+        .navbar {
+            background-color: rgba(43, 43, 43, 0.9) !important;
+        }
+        .footer {
+            background-color: #2b2b2b;
+            color: white;
+            padding: 40px 0;
+        }
+        .social-icons i {
+            font-size: 24px;
+            margin: 0 10px;
+            color: white;
+        }
+        .nav-link {
+            color: white !important;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #ffc107 !important;
+        }
+        .custom-card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .custom-card:hover {
+            transform: translateY(-5px);
+        }
+        .hero-content {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><i class="fas fa-hamburger"></i> Hamburguer's Junior</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="mt-4">
+            <a href="https://tinyurl.com/297xajt2" class="btn btn-primary btn-lg mx-2">VOKI</a>
+            <a href="https://create.kahoot.it/details/87f35a13-9e3c-4581-9f58-a3fee7d6dc46" class="btn btn-success btn-lg mx-2">KAHOOT</a>
+            <a href="https://scratch.mit.edu/projects/1092311569" class="btn btn-info btn-lg mx-2">SCRATCH</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section text-center" id="inicio">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="display-4 fw-bold">Hamburguer's Junior</h1>
+            <p class="lead">Las mejores hamburguesas artesanales de Bucaramanga</p>
+            <a href="#menu" class="btn btn-warning btn-lg">Ver Menú</a>
+        </div>
+       
+       
+    </div>
+</section>
+
+<!-- Nosotros Section -->
+<section class="py-5" id="nosotros">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card custom-card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Misión</h3>
+                        <p class="card-text">Ofrecer la mejor experiencia gastronómica en hamburguesas artesanales, utilizando ingredientes frescos y de alta calidad, mientras brindamos un servicio excepcional en un ambiente acogedor y familiar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card custom-card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Visión</h3>
+                        <p class="card-text">Ser reconocidos como el restaurante líder en hamburguesas artesanales en Bucaramanga, expandiendo nuestra presencia a nivel nacional mientras mantenemos la calidad y el sabor que nos caracteriza.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card custom-card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Objetivos</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">✓ Mantener la más alta calidad en nuestros productos</li>
+                            <li class="mb-2">✓ Brindar una experiencia memorable a nuestros clientes</li>
+                            <li class="mb-2">✓ Innovar constantemente nuestro menú</li>
+                            <li>✓ Expandir nuestra presencia en la región</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Menú Section -->
+<section class="bg-light py-5" id="menu">
+    <div class="container">
+        <h2 class="text-center mb-5">Nuestro Menú</h2>
+        <div class="row g-4">
+            <!-- Hamburguesas Clásicas -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card menu-item">
+                    <img src="img/hamburguesaclasica.jpg" class="card-img-top" alt="Hamburguesa Clásica">
+                    <div class="card-body">
+                        <h5 class="card-title">Clásicas</h5>
+                        <ul class="list-unstyled">
+                            <li>🍔 Hamburguesa Clásica - $15.000</li>
+                            <li>🧀 Cheeseburger - $17.000</li>
+                            <li>🥓 Bacon Burger - $19.000</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Hamburguesas Especiales -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card menu-item">
+                    <img src="img/hamburguesapollobbq.jpg" class="card-img-top" alt="Hamburguesas Especiales">
+                    <div class="card-body">
+                        <h5 class="card-title">Especiales</h5>
+                        <ul class="list-unstyled">
+                            <li>🔥 BBQ Deluxe - $22.000</li>
+                            <li>🌶️ Spicy Master - $23.000</li>
+                            <li>🧀 Triple Cheese - $24.000</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Hamburguesas Saludables -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card menu-item">
+                    <img src="img/hamburguesasaludable.jpg" class="card-img-top" alt="Hamburguesas Saludables">
+                    <div class="card-body">
+                        <h5 class="card-title">Saludables</h5>
+                        <ul class="list-unstyled">
+                            <li>🥗 Vegetariana - $18.000</li>
+                            <li>🐔 Chicken Burger - $20.000</li>
+                            <li>🥑 Vegana - $21.000</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ubicación Section -->
+<section class="py-5" id="ubicacion">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="mb-4">Ubicación</h2>
+                <p><i class="fas fa-map-marker-alt"></i> Cra33, Bucaramanga</p>
+                <p><i class="fas fa-clock"></i> Horario:</p>
+                <ul class="list-unstyled">
+                    <li>Lunes a Jueves: 12:00 PM - 10:00 PM</li>
+                    <li>Viernes y Sábado: 12:00 PM - 11:00 PM</li>
+                    <li>Domingo: 12:00 PM - 9:00 PM</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="img/ubicacion.jpg" class="img-fluid rounded" alt="Mapa">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contacto Section -->
+<section class="bg-light py-5" id="contacto">
+    <div class="container">
+        <h2 class="text-center mb-5">Contáctanos</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4" placeholder="Mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Enviar Mensaje</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex flex-column h-100 justify-content-center">
+                    <h4>Información de Contacto</h4>
+                    <p><i class="fas fa-phone"></i> 3144854855</p>
+                    <p><i class="fas fa-envelope"></i> info@burgerJR.com</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Hamburguer's Junior</h5>
+                <p>Las mejores hamburguesas artesanales de la ciudad.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Enlaces Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#inicio" class="text-white">Inicio</a></li>
+                    <li><a href="#menu" class="text-white">Menú</a></li>
+                    <li><a href="#ubicacion" class="text-white">Ubicación</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Síguenos</h5>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-4 mb-4 bg-light">
+        <div class="text-center">
+            <p>&copy; 2024 Hamburguer's Junior. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
